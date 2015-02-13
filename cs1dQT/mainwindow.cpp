@@ -12,4 +12,5 @@ MainWindow::~MainWindow()
 {
     delete ui;
     // this is more stuff and stuff to test this out
+    // sajdflkjaskdf test  gay
 }
