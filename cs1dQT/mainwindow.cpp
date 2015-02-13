@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    // Austin test
     // this is more stuff and stuff to test this out
     // sajdflkjaskdf test  gay
 }
