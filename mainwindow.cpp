@@ -19,12 +19,22 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     Account login;
+    bool adminStatus = false;
     login.setModal(true);
     login.exec();
 
 
     //Calls login function
-    login.Login();
+    adminStatus = login.Login();
+
+    if(adminStatus)
+    {
+        //ADMIN WINDOW
+    }
+    else
+    {
+        //USER WINDOW
+    }
 
 }
 

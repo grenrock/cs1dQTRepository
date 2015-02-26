@@ -43,7 +43,7 @@ void Account::CreateUser()
 //    Qdebug() << textEdit;
 }
 
-void Account::Login()
+bool Account::Login()
 {
     QMessageBox messageBox;
     ReadFile();
@@ -59,15 +59,15 @@ void Account::Login()
     QString username;
     QString password;
 
-
-    //Takes in login input from user
-    username = ui->UsernameLoginBox->text();
-    password = ui->PasswordLoginBox->text();
-
-    login = loginOk(username, password, i, count);
-
     while (!login)
     {
+        //Takes in login input from user
+        username = ui->UsernameLoginBox->text();
+        password = ui->PasswordLoginBox->text();
+
+        login = loginOk(username, password, i, count);
+
+
         if (login)
         {
             login = true;
@@ -85,15 +85,8 @@ void Account::Login()
 
     adminStatus = checkAdmin(count);
 
-    //TEMPORARY--JUST TO MAKE SURE IT WORKS!! Menus and functions will be added here!
-    if(adminStatus)
-    {
-        qDebug() << "Welcome back admin";
-    }
-    else
-    {
-        qDebug() << "Hello user!";
-    }
+    return adminStatus;
+
 }
 
 void Account::ReadFile()

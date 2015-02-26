@@ -31,7 +31,7 @@ public:
 
     //ACCOUNT OPTIONS
     void CreateUser();
-    void Login();
+    bool Login();
     void Print();
     int totalAccounts;
     bool checkAdmin(int count);
