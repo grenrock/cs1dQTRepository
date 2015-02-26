@@ -35,12 +35,13 @@ public:
     void Print();
     int totalAccounts;
     bool checkAdmin(int count);
+    bool checkUsername(QString username, unsigned int &i);
+    void adminStatus();
     bool loginOk(QString username, QString password, unsigned int i, int &count);
     void ReadFile();
-
+    vector <AccountInfo> accounts;
 
 private:
-    vector <AccountInfo> accounts;
     Ui::Account *ui;
 };
 

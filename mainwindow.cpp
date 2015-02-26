@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "account.h"
+#include "adminmain.h"
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -19,6 +20,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     Account login;
+    adminmain admin;
     bool adminStatus = false;
     login.setModal(true);
     login.exec();
@@ -29,26 +31,18 @@ void MainWindow::on_pushButton_clicked()
 
     if(adminStatus)
     {
-        //ADMIN WINDOW
+        admin.setModal(true);
+        admin.exec();
     }
     else
     {
         //USER WINDOW
+        qDebug() << "user";
     }
 
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    // Austin test
-    // this is more stuff and stuff to test this out
-    // sajdflkjaskdf test  gay
-    // new comment
-    // this is a test
-    // yet another fucking test sd
-    // holy shit balls
-    // test test testicle
-    //Dori Test
-    // Great job m8
-
+   //REGISTRATION STUFF WILL GO HERE!
 }

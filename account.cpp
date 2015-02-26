@@ -61,6 +61,7 @@ bool Account::Login()
 
     while (!login)
     {
+
         //Takes in login input from user
         username = ui->UsernameLoginBox->text();
         password = ui->PasswordLoginBox->text();
@@ -70,18 +71,19 @@ bool Account::Login()
 
         if (login)
         {
-            login = true;
+            break;
         }
         else if (!login)
         {
             messageBox.setText("INCORRECT LOGIN!");
             messageBox.setFixedSize(500, 200);
             messageBox.exec();
+            this->close();
             z.setModal(true);
             z.exec();
         }
-    }
 
+    }
 
     adminStatus = checkAdmin(count);
 
@@ -169,3 +171,28 @@ bool Account::checkAdmin(int count)
 
     return isAdmin;
 }
+
+bool Account::checkUsername(QString username, unsigned int &i)
+{
+    //Opens file and reads it
+    ReadFile();
+
+    bool found = false;
+
+    i = 0;
+
+    while (i < accounts.size() && !found)
+    {
+        if(username == accounts[i].userName)
+        {
+            found = true;
+        }
+        else
+        {
+            i++;
+        }
+    }
+
+    return found;
+}
+

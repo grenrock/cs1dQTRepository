@@ -14,13 +14,22 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    account.cpp
+    account.cpp \
+    adminmain.cpp \
+    edituser.cpp \
+    editadminstatus.cpp
 
 HEADERS  += mainwindow.h \
-    account.h
+    account.h \
+    adminmain.h \
+    edituser.h \
+    editadminstatus.h
 
 FORMS    += mainwindow.ui \
-    account.ui
+    account.ui \
+    adminmain.ui \
+    edituser.ui \
+    editadminstatus.ui
 
 DISTFILES += \
     LoginInfo.txt

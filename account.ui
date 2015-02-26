@@ -50,6 +50,9 @@
     <property name="text">
      <string/>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
    </widget>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -94,6 +97,22 @@
     <hint type="destinationlabel">
      <x>157</x>
      <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Account</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>276</x>
+     <y>246</y>
     </hint>
    </hints>
   </connection>
