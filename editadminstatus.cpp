@@ -17,6 +17,16 @@ editAdminStatus::~editAdminStatus()
 
 void editAdminStatus::adminStatus()
 {
+
+}
+
+void editAdminStatus::on_pushButton_2_clicked()
+{
+    this->close();
+}
+
+void editAdminStatus::on_pushButton_clicked()
+{
     QMessageBox messageBox;
     QString username;
     QString messageString;
@@ -51,7 +61,6 @@ void editAdminStatus::adminStatus()
             this->close();
         }
 
-
     }
     else
     {
@@ -60,5 +69,4 @@ void editAdminStatus::adminStatus()
         messageBox.exec();
         this->close();
     }
-
 }
