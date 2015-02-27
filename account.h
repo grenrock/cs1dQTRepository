@@ -32,7 +32,7 @@ public:
     //ACCOUNT OPTIONS
     void CreateUser();
     bool Login();
-    void Print();
+    void CloseAccount();
     int totalAccounts;
     void checkAdmin(int count);
     bool checkUsername(QString username, unsigned int &i);

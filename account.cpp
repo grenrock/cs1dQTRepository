@@ -44,6 +44,34 @@ void Account::CreateUser()
 //    Qdebug() << textEdit;
 }
 
+void Account::CloseAccount()
+{
+
+    //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
+
+    remove("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+    file.open(QIODevice::WriteOnly|QIODevice::Text);
+
+    QTextStream out(&file);
+
+    unsigned int i = 0;
+
+    while (i < accounts.size())
+    {
+        out << accounts[i].userName << endl;
+        out << accounts[i].password << endl;
+        out << accounts[i].name << endl;
+        out << accounts[i].adminStatus << endl;
+        out << " " << endl;
+        qDebug () << "here";
+        i++;
+    }
+
+    file.close();
+    qDebug() << "Output to file complete!";
+}
+
 void Account::ReadFile()
 {
     QTextStream stream(stdin);
@@ -57,8 +85,8 @@ void Account::ReadFile()
     QString sp;
 
 
-    //QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
-    QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
+    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+    //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&file);
@@ -126,17 +154,6 @@ void Account::checkAdmin(int count)
         //USER WINDOW
         qDebug() << "user";
     }
-
-//    if (accounts[i].adminStatus == "yes")
-//    {
-//        isAdmin = true;
-//    }
-//    else
-//    {
-//        isAdmin = false;
-//    }
-
-//    return isAdmin;
 }
 
 bool Account::checkUsername(QString username, unsigned int &i)
@@ -198,15 +215,6 @@ void Account::on_ok_clicked()
         messageBox.setFixedSize(500, 200);
         messageBox.exec();
     }
-
-
-/*    return adminStatus;
-
-
-    //Calls login function
-    adminStatus = login.Login()*/;
-
-
 }
 
 void Account::on_cancel_clicked() {

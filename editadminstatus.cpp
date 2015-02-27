@@ -51,6 +51,10 @@ void editAdminStatus::on_pushButton_clicked()
             messageBox.setFixedSize(500, 200);
             messageBox.exec();
             this->close();
+
+            h.accounts = newAccount;
+
+            h.CloseAccount();
         }
         else
         {
@@ -59,6 +63,9 @@ void editAdminStatus::on_pushButton_clicked()
             messageBox.setFixedSize(500, 200);
             messageBox.exec();
             this->close();
+
+            h.accounts = newAccount;
+            h.CloseAccount();
         }
 
     }
