@@ -1,6 +1,7 @@
 #include "account.h"
 #include "ui_account.h"
 #include "mainwindow.h"
+#include "adminmain.h"
 #include <QDebug>
 #include <QTextStream>
 #include <QFile>
@@ -43,59 +44,11 @@ void Account::CreateUser()
 //    Qdebug() << textEdit;
 }
 
-bool Account::Login()
-{
-    QMessageBox messageBox;
-    ReadFile();
-    Account z;
-    MainWindow w;
-
-    unsigned int i = 0;
-    int count = 0;
-
-    bool login = false;
-    bool adminStatus;
-
-    QString username;
-    QString password;
-
-    while (!login)
-    {
-
-        //Takes in login input from user
-        username = ui->UsernameLoginBox->text();
-        password = ui->PasswordLoginBox->text();
-
-        login = loginOk(username, password, i, count);
-
-
-        if (login)
-        {
-            break;
-        }
-        else if (!login)
-        {
-            messageBox.setText("INCORRECT LOGIN!");
-            messageBox.setFixedSize(500, 200);
-            messageBox.exec();
-            this->close();
-            z.setModal(true);
-            z.exec();
-        }
-
-    }
-
-    adminStatus = checkAdmin(count);
-
-    return adminStatus;
-
-}
-
 void Account::ReadFile()
 {
     QTextStream stream(stdin);
 
-    AccountInfo nextAccount;
+
 
     QString user;
     QString pw;
@@ -104,7 +57,7 @@ void Account::ReadFile()
     QString sp;
 
 
-    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&file);
@@ -113,6 +66,7 @@ void Account::ReadFile()
 
     while(!in.atEnd())
     {
+        AccountInfo nextAccount;
         totalAccounts++;
 
         user = in.readLine();
@@ -151,25 +105,37 @@ bool Account::loginOk(QString username, QString password, unsigned int i, int &c
     return loginOk;
 }
 
-bool Account::checkAdmin(int count)
+void Account::checkAdmin(int count)
 {
-    bool isAdmin = false;
+
+
+        adminmain admin;
 
     unsigned int i;
 
     i = count;
 
-
-    if (accounts[i].adminStatus == "yes")
+    if(accounts[i].adminStatus == "yes")
     {
-        isAdmin = true;
+        admin.setModal(true);
+        admin.exec();
     }
     else
     {
-        isAdmin = false;
+        //USER WINDOW
+        qDebug() << "user";
     }
 
-    return isAdmin;
+//    if (accounts[i].adminStatus == "yes")
+//    {
+//        isAdmin = true;
+//    }
+//    else
+//    {
+//        isAdmin = false;
+//    }
+
+//    return isAdmin;
 }
 
 bool Account::checkUsername(QString username, unsigned int &i)
@@ -196,3 +162,52 @@ bool Account::checkUsername(QString username, unsigned int &i)
     return found;
 }
 
+void Account::on_ok_clicked()
+{
+    QMessageBox messageBox;
+    ReadFile();
+    Account z;
+    MainWindow w;
+
+    unsigned int i = 0;
+    int count = 0;
+
+    bool login = false;
+    bool adminStatus;
+
+    QString username;
+    QString password;
+
+
+    //Takes in login input from user
+    username = ui->UsernameLoginBox->text();
+    password = ui->PasswordLoginBox->text();
+
+    login = loginOk(username, password, i, count);
+
+
+    if (login)
+    {
+        checkAdmin(count);
+        this->close();
+    }
+    else if (!login)
+    {
+        messageBox.setText("INCORRECT LOGIN!");
+        messageBox.setFixedSize(500, 200);
+        messageBox.exec();
+    }
+
+
+/*    return adminStatus;
+
+
+    //Calls login function
+    adminStatus = login.Login()*/;
+
+
+}
+
+void Account::on_cancel_clicked() {
+    this->close();
+}

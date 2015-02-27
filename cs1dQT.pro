@@ -17,19 +17,22 @@ SOURCES += main.cpp\
     account.cpp \
     adminmain.cpp \
     edituser.cpp \
-    editadminstatus.cpp
+    editadminstatus.cpp \
+    register.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
     adminmain.h \
     edituser.h \
-    editadminstatus.h
+    editadminstatus.h \
+    register.h
 
 FORMS    += mainwindow.ui \
     account.ui \
     adminmain.ui \
     edituser.ui \
-    editadminstatus.ui
+    editadminstatus.ui \
+    register.ui
 
 DISTFILES += \
     LoginInfo.txt

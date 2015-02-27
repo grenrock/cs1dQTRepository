@@ -34,7 +34,7 @@ public:
     bool Login();
     void Print();
     int totalAccounts;
-    bool checkAdmin(int count);
+    void checkAdmin(int count);
     bool checkUsername(QString username, unsigned int &i);
     void adminStatus();
     bool loginOk(QString username, QString password, unsigned int i, int &count);
@@ -43,6 +43,10 @@ public:
 
 private:
     Ui::Account *ui;
+
+private slots:
+    void on_ok_clicked();
+    void on_cancel_clicked();
 };
 
 #endif // ACCOUNT_H
