@@ -4,6 +4,7 @@
 #include <QDialog>
 #include<iostream>
 #include<iomanip>
+#include "account.h"
 using namespace std;
 
 //Struct holds all information for user

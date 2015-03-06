@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,41 +13,44 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLineEdit" name="fullname">
+  <widget class="QLineEdit" name="RegisterFullNameBox">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>80</y>
-     <width>161</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="username">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>130</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="password">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>170</y>
+     <x>50</x>
+     <y>70</y>
      <width>113</width>
      <height>20</height>
     </rect>
    </property>
   </widget>
+  <widget class="QLineEdit" name="RegisterUsernameBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>120</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="RegisterPasswordBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
   <widget class="QPushButton" name="submit">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>220</y>
+     <x>90</x>
+     <y>230</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -60,7 +63,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>220</y>
+     <y>230</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -72,10 +75,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>80</y>
-     <width>47</width>
-     <height>13</height>
+     <x>180</x>
+     <y>70</y>
+     <width>71</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
@@ -85,23 +88,23 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>130</y>
-     <width>91</width>
-     <height>20</height>
+     <x>180</x>
+     <y>120</y>
+     <width>61</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Desired username</string>
+    <string>Username</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>180</x>
      <y>170</y>
-     <width>61</width>
-     <height>20</height>
+     <width>51</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">

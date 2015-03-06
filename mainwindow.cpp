@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "account.h"
+#include "register.h"
 #include "adminmain.h"
 //#include "register.h"
 #include <QDebug>
@@ -46,7 +47,8 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-//   Register regg;
-//   regg.setModal(true);
-//   regg.exec();
+    Register regg;
+    regg.ReadFile();
+    regg.setModal(true);
+    regg.exec();
 }

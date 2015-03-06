@@ -1,46 +1,40 @@
-//#ifndef REGISTER_H
-//#define REGISTER_H
+#ifndef REGISTER_H
+#define REGISTER_H
 
-//#include <QDialog>
-//#include<iostream>
-//#include<iomanip>
-//using namespace std;
+#include <QDialog>
+#include <QDialog>
+#include<iostream>
+#include<iomanip>
+#include "Account.h"
+using namespace std;
 
-//struct AccountInfo
-//{
-//    QString name;                        //Users name
-//    QString adminStatus;                 //The users admin status
-//    QString userName;                    //Users username
-//    QString password;                    //Users password
-//    QString space;
-//};
+namespace Ui {
+class Register;
+}
 
-////Account class
-//namespace Ui {
-//class Register;
-//}
+class Register : public QDialog
+{
+    Q_OBJECT
 
-//class Register : public QDialog
-//{
-//    Q_OBJECT
+public:
+    explicit Register(QWidget *parent = 0);
+    ~Register();
 
-//public:
-//    explicit Register(QWidget *parent = 0);
-//    ~Register();
+    //REGISTRATION OPTIONS
+    void ReadFile();
+    void checkUsernameAvailability();
+    void addAccount();
+    void printToFile();
 
-//    //REGISTRATION OPTIONS
-//    void registerInfo(QString name, QString username, QString password);
-//    void checkUsernameAvailability(const vector<AccountInfo> &accounts);
-//    void addAccount(vector<AccountInfo> &accounts);
+private:
+    Ui::Register *ui;
+    AccountInfo info;
+    vector<AccountInfo> accounts;
 
-//private:
-//    Ui::Register *ui;
-//    AccountInfo info;
+private slots:
+    void on_submit_clicked();
+    void on_cancel_clicked();
+};
 
-//private slots:
-//    void on_submit_clicked();
-//    void on_cancel_clicked();
-//};
 
-//#endif // REGISTER_H
-
+#endif // REGISTER_H
