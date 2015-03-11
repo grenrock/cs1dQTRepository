@@ -1,0 +1,225 @@
+10
+Adelaida Cellars
+1
+0.0
+13.2
+15.4
+11.5
+13.3
+15.2
+5.8
+6.9
+11.2
+3.5
+8
+3
+Cabernet Sauvignon
+2000
+22.50
+Zinfandel
+2002
+14.00
+Old Vines Zinfandel
+2001
+19.50
+Castoro Cellars
+2
+13.2
+0.0
+15.1
+14.8
+0.1
+4.2
+10.3
+9.3
+5.2
+11.0
+4.29
+4
+Sauvignon Blanc
+2002
+12.50
+Estate Chardonnay
+2001
+18.00
+Zinfandel
+2002
+16.00
+Late Harvest Zinfandel
+2001
+22.50
+Chumeia
+3
+15.4
+15.1
+0.0
+4.3
+16.1
+14.3
+18.4
+18.3
+17.2
+17.2
+12.41
+2
+Voignier
+2002
+9.50
+Pinot Noir
+2001
+16.00
+Eberle Winery
+4
+11.5
+14.8
+4.3
+0.0
+8.1
+9.4
+14.4
+14.3
+13.2
+13.2
+7.56
+3
+Estate Cabernet Sauvignon
+2000
+25.00
+Zinfandel
+2001
+18.00
+Chardonnay
+2002
+20.00
+Jan Kris Winery
+5
+13.3
+0.1
+16.1
+8.1
+0.0
+4.5
+8.5
+8.4
+5.1
+12.1
+2.67
+2
+Zinfandel
+2002
+14.50
+Zinfandel Port
+2002
+16.00
+L'Aventure
+6
+15.2
+4.2
+14.3
+9.4
+4.5
+0.0
+11.2
+11.1
+5.1
+14.2
+5.94
+1
+Optimus
+2001
+28.00
+Norman Vineyards
+7
+5.8
+10.3
+18.4
+14.4
+8.5
+11.2
+0.0
+0.7
+5.8
+4.0
+8.44
+4
+Barbera
+2002
+16.00
+Meritage (No Nonsense Red)
+2001
+14.50
+Zinfandel "The Classic"
+2002
+16.00
+Zinfandel "The Monster"
+2002
+16.50
+Opolo Vineyards
+8
+6.9
+9.3
+18.7
+14.3
+8.4
+11.1
+0.7
+0.0
+5.7
+4.7
+12.75
+3
+Syrah
+2001
+18.00
+Pinot Noir
+2001
+22.00
+Zinfandel
+2002
+18.00
+Pipestone Vineyards
+9
+11.2
+5.2
+17.2
+13.2
+5.1
+5.1
+5.8
+5.7
+0.0
+9.5
+9.19
+3
+Viognier
+2002
+12.50
+Syrah
+2001
+15.00
+Syrah
+2002
+16.50
+Tablas Creek Vineyard
+10
+3.5
+11.0
+17.2
+13.2
+12.1
+14.2
+4.0
+4.7
+9.5
+0.0
+14.54
+3
+Roussane
+2002
+14.50
+Cote de Blanc
+2002
+15.00
+Cote de Rouge
+2001
+18.00

@@ -6,6 +6,7 @@
 #include <QTextStream>
 #include <QFile>
 #include <QMessageBox>
+#include "winewindow.h"
 Account::Account(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Account)
@@ -85,8 +86,8 @@ void Account::ReadFile()
     QString sp;
 
 
-    //QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
-    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
+    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+    //QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
     //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
@@ -152,8 +153,9 @@ void Account::checkAdmin(int count)
     }
     else
     {
-        //USER WINDOW
-        qDebug() << "user";
+        WineWindow wWindow;
+        wWindow.setModal(true);
+        wWindow.exec();
     }
 }
 

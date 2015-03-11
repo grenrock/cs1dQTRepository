@@ -18,21 +18,41 @@ SOURCES += main.cpp\
     adminmain.cpp \
     edituser.cpp \
     editadminstatus.cpp \
-    register.cpp
+    register.cpp \
+    winewindow.cpp \
+    customtrip.cpp \
+    displaywinery.cpp \
+    trip.cpp \
+    viewcustomtrip.cpp \
+    winerylist.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
     adminmain.h \
     edituser.h \
     editadminstatus.h \
-    register.h
+    register.h \
+    winewindow.h \
+    winery.h \
+    customtrip.h \
+    displaywinery.h \
+    trip.h \
+    viewcustomtrip.h \
+    winerylist.h
 
 FORMS    += mainwindow.ui \
     account.ui \
     adminmain.ui \
     edituser.ui \
     editadminstatus.ui \
-    register.ui
+    register.ui \
+    winewindow.ui \
+    customtrip.ui \
+    displaywinery.ui \
+    trip.ui \
+    viewcustomtrip.ui \
+    winerylist.ui
 
 DISTFILES += \
-    LoginInfo.txt
+    LoginInfo.txt \
+    WineryList.txt
