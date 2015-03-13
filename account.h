@@ -40,6 +40,7 @@ public:
     void adminStatus();
     bool loginOk(QString username, QString password, unsigned int i, int &count);
     void ReadFile();
+    int getTotalAccounts();
     vector <AccountInfo> accounts;
 
 private:

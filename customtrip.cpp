@@ -20,8 +20,10 @@ CustomTrip::~CustomTrip()
 }
 void CustomTrip::ReadIn()
 {
-    QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
+    //QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
     //QFile file("E:\\WineryProject_CS1D\\WineryList.txt");
+
+    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
 

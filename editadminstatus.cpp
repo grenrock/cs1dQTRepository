@@ -8,6 +8,23 @@ editAdminStatus::editAdminStatus(QWidget *parent) :
     ui(new Ui::editAdminStatus)
 {
     ui->setupUi(this);
+    Account h;
+    h.ReadFile();
+
+    int size;
+
+    size = h.accounts.size();
+
+
+    vector<AccountInfo> newAccount;
+    newAccount =h.accounts;
+    for(int j = 0; j < size ; j ++)
+    {
+      QString str =  newAccount[j].userName;
+      QString as  =  newAccount[j].adminStatus;
+      ui->listWidget->addItem("User Name: "    + str);
+      ui->listWidget->addItem("Admin Status: " + as  + '\n' + "---------------------------");
+    }
 }
 
 editAdminStatus::~editAdminStatus()
@@ -39,7 +56,11 @@ void editAdminStatus::on_pushButton_clicked()
 
     vector <AccountInfo> newAccount;
 
+
     found = h.checkUsername(username, i);
+
+
+
 
     if (found)
     {

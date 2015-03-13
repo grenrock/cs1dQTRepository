@@ -219,6 +219,10 @@ void Account::on_ok_clicked()
         messageBox.exec();
     }
 }
+int Account::getTotalAccounts()
+{
+    return totalAccounts;
+}
 
 void Account::on_cancel_clicked() {
     this->close();
