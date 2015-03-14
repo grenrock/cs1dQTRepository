@@ -38,11 +38,6 @@ void Account::CreateUser()
     QString password;
     QString passwordConfirm;
 
-//    ui->textEdit->text();
-//    ui->textEdit_2->text();
-//    ui->textEdit_3->text();
-
-//    Qdebug() << textEdit;
 }
 
 void Account::CloseAccount()
@@ -65,7 +60,6 @@ void Account::CloseAccount()
         out << accounts[i].name << endl;
         out << accounts[i].adminStatus << endl;
         out << " " << endl;
-        qDebug () << "here";
         i++;
     }
 
