@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     viewcustomtrip.cpp \
     winerylist.cpp \
     editwineries.cpp \
-    addwinewineryselector.cpp
+    addwinewineryselector.cpp \
+    deleteuser.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
@@ -42,7 +43,8 @@ HEADERS  += mainwindow.h \
     viewcustomtrip.h \
     winerylist.h \
     editwineries.h \
-    addwinewineryselector.h
+    addwinewineryselector.h \
+    deleteuser.h
 
 FORMS    += mainwindow.ui \
     account.ui \
@@ -57,7 +59,8 @@ FORMS    += mainwindow.ui \
     viewcustomtrip.ui \
     winerylist.ui \
     editwineries.ui \
-    addwinewineryselector.ui
+    addwinewineryselector.ui \
+    deleteuser.ui
 
 DISTFILES += \
     WineryList.txt \
