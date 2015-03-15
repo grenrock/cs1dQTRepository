@@ -11,7 +11,7 @@ yes
 sgren
 123456
 Stephen
-yes
+no
  
 jen
 jena
@@ -26,20 +26,5 @@ no
 josh
 josh
 Josh
-yes
- 
-lebowitz
-josh
-Jerry
-no
- 
-lebowitz1
-jerry
-jerry
-yes
- 
-javalava22
-rachel
-Rachel
 no
  

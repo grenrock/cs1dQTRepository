@@ -16,8 +16,12 @@ WineryList::WineryList(QWidget *parent) :
 
 void WineryList::ReadIn()
 {
-     QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
+    // **** JOSH ****
+    //QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
     //QFile file("E:\\WineryProject_CS1D\\WineryList.txt");
+
+    // **** STEVEN ****
+    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
 

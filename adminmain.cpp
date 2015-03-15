@@ -1,6 +1,7 @@
 #include "adminmain.h"
 #include "ui_adminmain.h"
 #include "edituser.h"
+#include "editwineries.h"
 #include <QDebug>
 
 adminmain::adminmain(QWidget *parent) :
@@ -27,6 +28,10 @@ void adminmain::on_EditUsersButton_clicked()
 void adminmain::on_EditWineriesButton_clicked()
 {
     qDebug() << "Edit Wineries";
+    EditWineries window;
+    window.setModal(true);
+    window.exec();
+
 }
 
 

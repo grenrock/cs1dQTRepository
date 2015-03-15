@@ -8,6 +8,7 @@
 #include <QTextStream>
 #include <QFile>
 #include <QMessageBox>
+#include <QFileInfo>
 
 Register::Register(QWidget *parent) :
     QDialog(parent),
@@ -24,7 +25,7 @@ Register::~Register()
 void Register::checkUsernameAvailability(){
     QMessageBox messageBox;
     bool available = true;
-    int i = 0;
+    unsigned int i = 0;
 
     while(available && i < accounts.size()){
         if(accounts[i].userName == info.userName){
@@ -34,12 +35,27 @@ void Register::checkUsernameAvailability(){
     }
 
     if(!available){
-        messageBox.setText("Username already taken. Please enter a new username, sweetie.");
+        messageBox.setText("Username already taken. Please enter a new username.");
+        messageBox.setFixedSize(500, 200);
+        messageBox.exec();
+    }
+    else if(info.userName.length() > 16 || info.userName.length() < 4){
+        messageBox.setText("Invalid username length - must be between 4 and 16 characters.");
+        messageBox.setFixedSize(500, 200);
+        messageBox.exec();
+    }
+    else if(info.password.length() > 20 || info.password.length() < 6){
+        messageBox.setText("Invalid password length - must be between 6 and 20 characters.");
+        messageBox.setFixedSize(500, 200);
+        messageBox.exec();
+    }
+    else if(info.name.length() > 50){
+        messageBox.setText("Name too long - must be 50 characters or shorter.");
         messageBox.setFixedSize(500, 200);
         messageBox.exec();
     }
     else{
-        messageBox.setText("Account Added!  Hope you enjoy your wine.");
+        messageBox.setText("Account Added!");
         messageBox.setFixedSize(500, 200);
         messageBox.exec();
         addAccount();
@@ -64,7 +80,7 @@ void Register::on_submit_clicked(){
 void Register::ReadFile()
 {
     QTextStream stream(stdin);
-
+    QFileInfo info;
 
 
     QString user;
@@ -72,9 +88,13 @@ void Register::ReadFile()
     QString n;
     QString as;
     QString sp;
+    QString filePath;
 
-    //QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
-    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+    // **** STEVEN ****
+    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
+
+    // **** DORI ****
+    //QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
     //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
@@ -107,11 +127,11 @@ void Register::printToFile(){
 
     //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
 
-    remove("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
-    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+  //  remove("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+ //   QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
 
-    //remove("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
-    //QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
+    remove("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
+    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\LoginInfo.txt");
 
     file.open(QIODevice::WriteOnly|QIODevice::Text);
 
