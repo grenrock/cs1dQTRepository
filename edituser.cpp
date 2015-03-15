@@ -2,6 +2,7 @@
 #include "ui_edituser.h"
 #include "editadminstatus.h"
 #include "adminmain.h"
+#include "deleteuser.h"
 #include <QDebug>
 
 editUser::editUser(QWidget *parent) :
@@ -23,7 +24,13 @@ void editUser::on_addUserButton_clicked()
 
 void editUser::on_deleteUserButton_clicked()
 {
-    qDebug() << "deleteUser";
+    deleteUser window;
+
+    window.setModal(true);
+    window.exec();
+
+    window.DeleteUser();
+
 }
 
 void editUser::on_editAdminStatusButton_clicked()
