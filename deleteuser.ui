@@ -86,6 +86,12 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>inputBox</tabstop>
+  <tabstop>DeleteButton</tabstop>
+  <tabstop>Cancel</tabstop>
+  <tabstop>listWidget</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -28,11 +28,6 @@ josh
 Josh
 yes
  
-lebowitz
-josh
-Jerry
-no
- 
 lebowitz1
 jerry
 jerry
