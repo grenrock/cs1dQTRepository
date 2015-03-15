@@ -24,7 +24,8 @@ SOURCES += main.cpp\
     displaywinery.cpp \
     trip.cpp \
     viewcustomtrip.cpp \
-    winerylist.cpp
+    winerylist.cpp \
+    deleteuser.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
@@ -38,7 +39,8 @@ HEADERS  += mainwindow.h \
     displaywinery.h \
     trip.h \
     viewcustomtrip.h \
-    winerylist.h
+    winerylist.h \
+    deleteuser.h
 
 FORMS    += mainwindow.ui \
     account.ui \
@@ -51,7 +53,8 @@ FORMS    += mainwindow.ui \
     displaywinery.ui \
     trip.ui \
     viewcustomtrip.ui \
-    winerylist.ui
+    winerylist.ui \
+    deleteuser.ui
 
 DISTFILES += \
     LoginInfo.txt \
