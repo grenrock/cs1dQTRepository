@@ -82,8 +82,6 @@ void Account::ReadFile()
 {
     QTextStream stream(stdin);
 
-
-
     QString user;
     QString pw;
     QString n;
