@@ -27,22 +27,6 @@ void MainWindow::on_pushButton_clicked()
     bool adminStatus = false;
     login.setModal(true);
     login.exec();
-
-
-//    //Calls login function
-//    adminStatus = login.Login();
-
-//    if(adminStatus)
-//    {
-//        admin.setModal(true);
-//        admin.exec();
-//    }
-//    else
-//    {
-//        //USER WINDOW
-//        qDebug() << "user";
-//    }
-
 }
 
 void MainWindow::on_pushButton_2_clicked()

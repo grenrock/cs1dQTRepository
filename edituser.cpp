@@ -4,6 +4,7 @@
 #include "adminmain.h"
 #include "deleteuser.h"
 #include <QDebug>
+#include "adduser.h"
 
 editUser::editUser(QWidget *parent) :
     QDialog(parent),
@@ -19,7 +20,11 @@ editUser::~editUser()
 
 void editUser::on_addUserButton_clicked()
 {
-    qDebug() << "addUser";
+    addUser window;
+    window.setModal(true);
+    window.exec();
+
+    window.add();
 }
 
 void editUser::on_deleteUserButton_clicked()

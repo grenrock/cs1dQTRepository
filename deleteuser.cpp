@@ -56,6 +56,7 @@ void deleteUser::on_DeleteButton_clicked()
     QString messageString;
     unsigned int i = 0;
     bool found = false;
+    int size;
 
     username = ui->inputBox->text();
 
@@ -63,19 +64,30 @@ void deleteUser::on_DeleteButton_clicked()
 
     vector <AccountInfo> newAccount;
 
-
     found = h.checkUsername(username, i);
 
-
-
+    newAccount = h.accounts;
 
     if (found)
     {
-        qDebug() << "Found";
-        newAccount = h.accounts;
+        size = i;
+
+        newAccount.erase(newAccount.begin() + size);
+        messageBox.setText("User has been deleted!");
+        messageBox.setFixedSize(500, 200);
+        messageBox.exec();
+
+        h.accounts = newAccount;
+        h.CloseAccount();
+        this->close();
     }
     else
     {
-        qDebug() << "Not Found";
+        messageBox.setText("User was NOT found!");
+        messageBox.setFixedSize(500, 200);
+        messageBox.exec();
+
+        h.accounts = newAccount;
+        h.CloseAccount();
     }
 }
