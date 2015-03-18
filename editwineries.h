@@ -20,9 +20,8 @@ private:
 
 private slots:
     void on_add_new_winery_clicked();
-    void on_add_new_wine_clicked();
-    void on_change_prices_clicked();
-    void on_cancel_edit_wineries_clicked();
+    void on_edit_winery_clicked();
+    void on_close_edit_wineries_clicked();
 };
 
 #endif // EDITWINERIES_H

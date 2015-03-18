@@ -1,5 +1,6 @@
 #include "editwineries.h"
 #include "ui_editwineries.h"
+#include "addwinewineryselector.h"
 #include <QDebug>
 
 EditWineries::EditWineries(QWidget *parent) :
@@ -15,17 +16,16 @@ EditWineries::~EditWineries()
 }
 
 void EditWineries::on_add_new_winery_clicked(){
-    qDebug() << "Add winery\n";
+    qDebug() << "Add new";
 }
 
-void EditWineries::on_add_new_wine_clicked(){
-    qDebug() << "Add wine\n";
+void EditWineries::on_edit_winery_clicked(){
+    AddWineWinerySelector select;
+    select.setModal(true);
+    select.exec();
 }
 
-void EditWineries::on_change_prices_clicked(){
-    qDebug() << "Change price\n";
-}
 
-void EditWineries::on_cancel_edit_wineries_clicked(){
+void EditWineries::on_close_edit_wineries_clicked(){
     this->close();
 }

@@ -28,7 +28,10 @@ SOURCES += main.cpp\
     editwineries.cpp \
     addwinewineryselector.cpp \
     deleteuser.cpp \
-    adduser.cpp
+    adduser.cpp \
+    addwine.cpp \
+    changeprice.cpp \
+    wineselector.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
@@ -46,7 +49,10 @@ HEADERS  += mainwindow.h \
     editwineries.h \
     addwinewineryselector.h \
     deleteuser.h \
-    adduser.h
+    adduser.h \
+    addwine.h \
+    changeprice.h \
+    wineselector.h
 
 FORMS    += mainwindow.ui \
     account.ui \
@@ -63,7 +69,10 @@ FORMS    += mainwindow.ui \
     editwineries.ui \
     addwinewineryselector.ui \
     deleteuser.ui \
-    adduser.ui
+    adduser.ui \
+    addwine.ui \
+    changeprice.ui \
+    wineselector.ui
 
 DISTFILES += \
     WineryList.txt \

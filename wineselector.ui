@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>EditWineries</class>
- <widget class="QDialog" name="EditWineries">
+ <class>WineSelector</class>
+ <widget class="QDialog" name="WineSelector">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,45 +11,42 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Edit Wineries</string>
+   <string>Wine Selector</string>
   </property>
-  <widget class="QPushButton" name="add_new_winery">
+  <widget class="QComboBox" name="wine_selector_box">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>80</y>
-     <width>131</width>
-     <height>23</height>
+     <x>70</x>
+     <y>70</y>
+     <width>161</width>
+     <height>22</height>
     </rect>
-   </property>
-   <property name="text">
-    <string>Add New Winery</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="edit_winery">
+  <widget class="QPushButton" name="wine_selector_ok">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>120</y>
-     <width>131</width>
+     <x>230</x>
+     <y>220</y>
+     <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Edit Winery Info</string>
+    <string>OK</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="close_edit_wineries">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>200</y>
-     <width>131</width>
-     <height>23</height>
+     <x>70</x>
+     <y>40</y>
+     <width>151</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Close</string>
+    <string>Choose Wine</string>
    </property>
   </widget>
  </widget>
