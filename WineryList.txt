@@ -12,16 +12,43 @@ Adelaida Cellars
 11.2
 3.5
 8
-3
+12
 Cabernet Sauvignon
 2000
-22.50
+2.4
 Zinfandel
 2002
-14.00
+1.13
 Old Vines Zinfandel
 2001
-19.50
+2.39
+New
+2000
+
+Newer
+2000
+2.22
+Pokeballs
+2002
+balls
+Jordan's Wine
+1994
+22.2
+Where's Dori?
+2015
+here
+Hungry Mousey
+1999
+2..2
+Poop
+2015
+2.22
+Josh's Wine
+1999
+3.33
+The Wine
+2000
+22.22
 Castoro Cellars
 2
 13.2
@@ -41,7 +68,7 @@ Sauvignon Blanc
 12.50
 Estate Chardonnay
 2001
-18.00
+2.22
 Zinfandel
 2002
 16.00
@@ -64,7 +91,7 @@ Chumeia
 2
 Voignier
 2002
-9.50
+2.222222
 Pinot Noir
 2001
 16.00

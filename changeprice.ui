@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>EditWineries</class>
- <widget class="QDialog" name="EditWineries">
+ <class>ChangePrice</class>
+ <widget class="QDialog" name="ChangePrice">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,45 +11,42 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Edit Wineries</string>
+   <string>Change Price</string>
   </property>
-  <widget class="QPushButton" name="add_new_winery">
+  <widget class="QLineEdit" name="change_price_new_price">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>80</y>
-     <width>131</width>
-     <height>23</height>
+     <x>170</x>
+     <y>110</y>
+     <width>113</width>
+     <height>20</height>
     </rect>
-   </property>
-   <property name="text">
-    <string>Add New Winery</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="edit_winery">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>120</y>
-     <width>131</width>
-     <height>23</height>
+     <x>50</x>
+     <y>110</y>
+     <width>121</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Edit Winery Info</string>
+    <string>Enter New Price           $</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="close_edit_wineries">
+  <widget class="QPushButton" name="change_price_ok">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>200</y>
-     <width>131</width>
+     <x>260</x>
+     <y>230</y>
+     <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Close</string>
+    <string>OK</string>
    </property>
   </widget>
  </widget>
