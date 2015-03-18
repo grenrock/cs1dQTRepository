@@ -62,7 +62,7 @@ Castoro Cellars
 5.2
 11.0
 4.29
-4
+5
 Sauvignon Blanc
 2002
 12.50
@@ -75,6 +75,9 @@ Zinfandel
 Late Harvest Zinfandel
 2001
 22.50
+Eggs
+2000
+2.22
 Chumeia
 3
 15.4
