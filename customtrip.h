@@ -1,9 +1,8 @@
 #ifndef CUSTOMTRIP_H
 #define CUSTOMTRIP_H
-
-#include <QDialog>
 #include "winery.h"
-
+#include <QDialog>
+#include "warning.h"
 namespace Ui {
 class CustomTrip;
 }
@@ -28,13 +27,18 @@ private slots:
 
     void on_createTrip_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::CustomTrip *ui;
     QVector<winery> currentWinery;
     QVector<winery> otherWineries;
     QVector<winery> trip;
+    winery startingWinery;
     int numWineries;
+    bool eStatus;
 
 };
 
 #endif // CUSTOMTRIP_H
+

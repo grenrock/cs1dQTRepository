@@ -2,6 +2,8 @@
 #define TRIP_H
 
 #include <QDialog>
+#include "shortesttrip.h"
+#include "visitallwineries.h"
 
 namespace Ui {
 class Trip;
@@ -18,8 +20,15 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
     Ui::Trip *ui;
+    float totDistance;
 };
 
 #endif // TRIP_H

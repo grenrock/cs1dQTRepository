@@ -16,12 +16,11 @@ WineryList::WineryList(QWidget *parent) :
 
 void WineryList::ReadIn()
 {
-    // **** JOSH ****
-    //QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
+   QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
+     //QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
     //QFile file("E:\\WineryProject_CS1D\\WineryList.txt");
+    //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//WineryList.txt");
 
-    // **** STEVEN ****
-    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
 
@@ -29,7 +28,6 @@ void WineryList::ReadIn()
     QString nWineries = in.readLine();
     numWineries = nWineries.toInt();
     qDebug() << numWineries;
-    ui->comboBox->addItem("Select Winery");
     for(int i = 0 ; i < numWineries; i ++)
     {
 
@@ -67,24 +65,23 @@ WineryList::~WineryList()
 
 void WineryList::on_pushButton_clicked()
 {
-    if(ui->comboBox->currentText() == "Select Winery")
+    for(int i = 0; i < currentWinery.size(); i ++)
     {
-        QMessageBox::warning(this, tr("Error Message"), tr("Please Select a Winery"));
-    }
-    else
-    {
-        for(int i = 0; i < currentWinery.size(); i ++)
+        if(ui->comboBox->currentItem()->text() == currentWinery[i].name)
         {
-            if(ui->comboBox->currentText() == currentWinery[i].name)
-            {
-                DisplayWinery showWineryInfo;
-                int numberWines = currentWinery[i].numWines.toInt();
-                showWineryInfo.setModal(true);
-                showWineryInfo.setWinery(currentWinery, i, numberWines);
-                showWineryInfo.exec();
-                break;
+            DisplayWinery showWineryInfo;
+            int numberWines = currentWinery[i].numWines.toInt();
+            showWineryInfo.setModal(true);
+            showWineryInfo.setWinery(currentWinery, i, numberWines);
+            showWineryInfo.exec();
+            break;
 
-            }
         }
     }
+
+}
+
+void WineryList::on_pushButton_2_clicked()
+{
+    this->close();
 }

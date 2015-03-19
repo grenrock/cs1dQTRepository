@@ -31,6 +31,7 @@ void DisplayWinery::setWinery(QVector<winery> inList, int index, int numWines)
         ui->listWidget->addItem("Year:   " + inList[index].winesOffered[i].year);
         ui->listWidget->addItem("Price:  $" + inList[index].winesOffered[i].price + '\n');
     }
+    ui->dLabel->setText("("+ inList[index].milesFrom +" miles from The Canyon Villa Resort)");
 }
 
 
@@ -51,3 +52,8 @@ void DisplayWinery::on_comboBox_activated(const QString &arg1)
     }
 }
 
+
+void DisplayWinery::on_pushButton_clicked()
+{
+    this->close();
+}

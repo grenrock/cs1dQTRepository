@@ -20,14 +20,11 @@ CustomTrip::~CustomTrip()
 }
 void CustomTrip::ReadIn()
 {
-    //QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
+    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
+   // QFile file("D:\\WineryProject_CS1D\\WineryList.txt");
     //QFile file("E:\\WineryProject_CS1D\\WineryList.txt");
+    //QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//WineryList.txt");
 
-    // **** STEVEN ****
-    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
-
-    // **** DORI ****
-    //QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
 
@@ -95,7 +92,6 @@ void CustomTrip::on_createTrip_clicked()
     }
     else
     {
-
         for(int j = 0; j < ui->addTrip->count(); j ++)
         {
             QString str = ui->addTrip->item(j)->text();
@@ -107,13 +103,26 @@ void CustomTrip::on_createTrip_clicked()
                     trip.push_back(currentWinery[i]);
 
                 }
+                if(ui->startingWinery->currentText() == currentWinery[i].name)
+                {
+                  startingWinery = currentWinery[i];
+                }
             }
         }
+
         ViewCustomTrip displayTrip;
         displayTrip.setModal(true);
-        displayTrip.setTrip(trip);
+        displayTrip.setTrip(trip, startingWinery);
         displayTrip.exec();
 
+      }
 
-    }
+    trip.clear();
+}
+
+
+
+void CustomTrip::on_pushButton_clicked()
+{
+    this->close();
 }
