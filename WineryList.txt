@@ -1,4 +1,4 @@
-10
+12
 Adelaida Cellars
 1
 0.0
@@ -11,6 +11,8 @@ Adelaida Cellars
 6.9
 11.2
 3.5
+11.5 
+13.8
 8
 3
 Cabernet Sauvignon
@@ -34,6 +36,8 @@ Castoro Cellars
 9.3
 5.2
 11.0
+14.2
+4.4
 4.29
 4
 Sauvignon Blanc
@@ -60,6 +64,8 @@ Chumeia
 18.3
 17.2
 17.2
+13.4
+18.1
 12.41
 2
 Voignier
@@ -80,6 +86,8 @@ Eberle Winery
 14.3
 13.2
 13.2
+16.5
+18.8
 7.56
 3
 Estate Cabernet Sauvignon
@@ -103,6 +111,8 @@ Jan Kris Winery
 8.4
 5.1
 12.1
+3.3
+0.8
 2.67
 2
 Zinfandel
@@ -123,6 +133,8 @@ L'Aventure
 11.1
 5.1
 14.2
+12.2
+8.2
 5.94
 1
 Optimus
@@ -140,6 +152,8 @@ Norman Vineyards
 0.7
 5.8
 4.0
+7.8
+10.8
 8.44
 4
 Barbera
@@ -166,6 +180,8 @@ Opolo Vineyards
 0.0
 5.7
 4.7
+6.9
+9.4
 12.75
 3
 Syrah
@@ -189,6 +205,8 @@ Pipestone Vineyards
 5.7
 0.0
 9.5
+8.2
+5.5
 9.19
 3
 Viognier
@@ -212,6 +230,8 @@ Tablas Creek Vineyard
 4.7
 9.5
 0.0
+6.11
+11.8
 14.54
 3
 Roussane
@@ -223,3 +243,68 @@ Cote de Blanc
 Cote de Rouge
 2001
 18.00
+Cass Winery
+11
+11.5 
+14.2
+13.4
+16.5
+3.3
+12.2
+7.8
+6.9
+8.2
+6.11
+0.0
+3.7
+10.1
+8
+Viognier
+2013
+12.50
+Roussanne
+2013 
+22.50
+Marsanne
+2013 
+19.87
+Oasis Rose
+2013 
+33.45
+Grenache
+2012 
+29.40
+Mourvedre
+2012 
+12.60
+Cabernet Sauvignon
+2011 
+50.45
+Desert Syrah
+2011
+17.99
+Hunt Cellars
+12
+13.8
+4.4
+18.1
+18.8
+0.8
+8.2
+10.8
+9.4
+5.5
+11.8
+3.7
+0.0
+6.6
+3
+Sauvignon Blanco
+2012
+12.44
+Estate Chardonnay
+2001
+18.00
+Zinfandel
+2012
+16.00

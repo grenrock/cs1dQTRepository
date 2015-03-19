@@ -31,7 +31,8 @@ SOURCES += main.cpp\
     adduser.cpp \
     addwine.cpp \
     changeprice.cpp \
-    wineselector.cpp
+    wineselector.cpp \
+    addnewwineries.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
@@ -52,7 +53,8 @@ HEADERS  += mainwindow.h \
     adduser.h \
     addwine.h \
     changeprice.h \
-    wineselector.h
+    wineselector.h \
+    addnewwineries.h
 
 FORMS    += mainwindow.ui \
     account.ui \
@@ -72,7 +74,8 @@ FORMS    += mainwindow.ui \
     adduser.ui \
     addwine.ui \
     changeprice.ui \
-    wineselector.ui
+    wineselector.ui \
+    addnewwineries.ui
 
 DISTFILES += \
     WineryList.txt \
