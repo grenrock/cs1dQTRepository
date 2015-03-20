@@ -11,7 +11,7 @@ Adelaida Cellars
 6.9
 11.2
 3.5
-11.5 
+11.5
 13.8
 8
 3
@@ -20,7 +20,7 @@ Cabernet Sauvignon
 22.50
 Zinfandel
 2002
-8.89
+14.00
 Old Vines Zinfandel
 2001
 19.50
@@ -245,7 +245,7 @@ Cote de Rouge
 18.00
 Cass Winery
 11
-11.5 
+11.5
 14.2
 13.4
 16.5
@@ -263,22 +263,22 @@ Viognier
 2013
 12.50
 Roussanne
-2013 
+2013
 22.50
 Marsanne
-2013 
+2013
 19.87
 Oasis Rose
-2013 
+2013
 33.45
 Grenache
-2012 
+2012
 29.40
 Mourvedre
-2012 
+2012
 12.60
 Cabernet Sauvignon
-2011 
+2011
 50.45
 Desert Syrah
 2011

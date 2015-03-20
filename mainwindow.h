@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "background.h"
 namespace Ui {
 class MainWindow;
 }

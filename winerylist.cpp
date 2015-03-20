@@ -65,20 +65,33 @@ WineryList::~WineryList()
 
 void WineryList::on_pushButton_clicked()
 {
-    for(int i = 0; i < currentWinery.size(); i ++)
+    bool selected = false;
+    for(int i = 0; i < numWineries; i ++)
+    if(ui->comboBox->item(i)->isSelected())
     {
-        if(ui->comboBox->currentItem()->text() == currentWinery[i].name)
-        {
-            DisplayWinery showWineryInfo;
-            int numberWines = currentWinery[i].numWines.toInt();
-            showWineryInfo.setModal(true);
-            showWineryInfo.setWinery(currentWinery, i, numberWines);
-            showWineryInfo.exec();
-            break;
-
-        }
+       selected = true;
     }
 
+    if(!selected)
+    {
+        QMessageBox::warning(this, tr("error"), tr("You must select a Winery"));
+    }
+    else
+    {
+        for(int i = 0; i < currentWinery.size(); i ++)
+        {
+            if(ui->comboBox->currentItem()->text() == currentWinery[i].name)
+            {
+                DisplayWinery showWineryInfo;
+                int numberWines = currentWinery[i].numWines.toInt();
+                showWineryInfo.setModal(true);
+                showWineryInfo.setWinery(currentWinery, i, numberWines);
+                showWineryInfo.exec();
+                break;
+
+            }
+        }
+    }
 }
 
 void WineryList::on_pushButton_2_clicked()

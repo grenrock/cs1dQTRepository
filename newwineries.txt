@@ -1,0 +1,66 @@
+2
+Cass Winery
+11
+11.5
+14.2
+13.4
+16.5
+3.3
+12.2
+7.8
+6.9
+8.2
+6.11
+0.0
+5.8
+10.1
+8
+Viognier
+2013
+12.50
+Roussanne
+2013
+22.50
+Marsanne
+2013
+19.87
+Oasis Rose
+2013
+33.45
+Grenache
+2012
+29.40
+Mourvedre
+2012
+12.60
+Cabernet Sauvignon
+2011
+50.45
+Desert Syrah
+2011
+17.99
+Hunt Cellars
+12
+13.8
+4.4
+18.1
+18.8
+0.8
+8.2
+10.8
+9.4
+5.5
+11.8
+3.7
+0.0
+6.6
+3
+Sauvignon Blanco
+2012
+12.44
+Estate Chardonnay
+2001
+18.00
+Zinfandel
+2012
+16.00

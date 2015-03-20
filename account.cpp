@@ -161,9 +161,14 @@ void Account::checkAdmin(int count)
     }
     else
     {
+        Background bGround;
+        bGround.setModal(true);
+        bGround.show();
         WineWindow wWindow;
         wWindow.setModal(true);
         wWindow.exec();
+
+
     }
 }
 

@@ -109,9 +109,22 @@ void ViewCustomTrip::setOrder(QVector<wine> orderSet)
 }
 void ViewCustomTrip::on_pushButton_2_clicked()
 {
-    if(!(ui->listWidget->currentItem()->isSelected()))
+    bool selected = false;
+    int i;
+
+    qDebug() << emptyVec.size();
+    for(i = 0; i < emptyVec.size(); i ++)
     {
-        QMessageBox::warning(this, tr("Error"), tr("Please Select a Winery to Purchas Wine"));
+        if(ui->listWidget->item(i)->isSelected())
+        {
+            selected = true;
+
+        }
+
+    }
+    if(!selected || ui->listWidget->item(i-1)->isSelected())
+    {
+        QMessageBox::warning(this, tr("Error"), tr("Please Select a Winery to Purchase Wine"));
     }
     else
     {

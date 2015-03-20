@@ -5,6 +5,7 @@
 #include<iostream>
 #include<iomanip>
 #include "account.h"
+#include "background.h"
 using namespace std;
 
 //Struct holds all information for user
@@ -45,6 +46,7 @@ public:
 
 private:
     Ui::Account *ui;
+    //Background bGround;
 
 private slots:
     void on_ok_clicked();

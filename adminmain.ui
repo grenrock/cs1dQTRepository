@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1228</width>
-    <height>388</height>
+    <width>306</width>
+    <height>281</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>230</y>
+     <x>100</x>
+     <y>160</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QSplitter" name="splitter">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>160</y>
+     <x>100</x>
+     <y>90</y>
      <width>93</width>
      <height>56</height>
     </rect>

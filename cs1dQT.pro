@@ -37,7 +37,9 @@ SOURCES += main.cpp\
     purchasewine.cpp \
     warning.cpp \
     shortesttrip.cpp \
-    visitallwineries.cpp
+    visitallwineries.cpp \
+    background.cpp \
+    completeorder.cpp
 
 HEADERS  += mainwindow.h \
     account.h \
@@ -64,7 +66,8 @@ HEADERS  += mainwindow.h \
     purchasewine.h \
     warning.h \
     shortesttrip.h \
-    visitallwineries.h
+    visitallwineries.h \
+    background.h
 
 FORMS    += mainwindow.ui \
     account.ui \
@@ -90,8 +93,10 @@ FORMS    += mainwindow.ui \
     purchasewine.ui \
     warning.ui \
     shortesttrip.ui \
-    visitallwineries.ui
+    visitallwineries.ui \
+    background.ui
 
 DISTFILES += \
     WineryList.txt \
-    LoginInfo.txt
+    LoginInfo.txt \
+    newwineries.txt

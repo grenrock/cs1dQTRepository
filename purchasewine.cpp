@@ -14,7 +14,7 @@ void PurchaseWine::setList(winery inWinery, QVector<wine> inOrder)
      QFont font;
      font.setPointSize(22);
      ui->WineryName->setFont(font);
-     ui->WineryName->setText(inWinery.name + " Menu");
+     ui->WineryName->setText(inWinery.name);
     int num = inWinery.numWines.toInt();
     for(int i = 0; i < num; i ++)
     {
@@ -78,6 +78,7 @@ void PurchaseWine::on_addToCart_clicked()
     order.clear();
 }
 
+
 void PurchaseWine::on_pushButton_clicked()
 {
     wine temp;
@@ -121,6 +122,12 @@ void PurchaseWine::on_view_clicked()
     c.setModal(true);
     c.setCart(cart);
     c.exec();
+
+    if(c.getPurchased())
+    {
+        cart.clear();
+    }
+
 }
 
 void PurchaseWine::on_Back_clicked()

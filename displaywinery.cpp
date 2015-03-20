@@ -31,7 +31,7 @@ void DisplayWinery::setWinery(QVector<winery> inList, int index, int numWines)
         ui->listWidget->addItem("Year:   " + inList[index].winesOffered[i].year);
         ui->listWidget->addItem("Price:  $" + inList[index].winesOffered[i].price + '\n');
     }
-    ui->dLabel->setText("("+ inList[index].milesFrom +" miles from The Canyon Villa Resort)");
+    ui->dLabel->setText("("+ inList[index].milesFrom +" miles from Canyon Villa)");
 }
 
 

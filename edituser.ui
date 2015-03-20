@@ -6,57 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1222</width>
-    <height>390</height>
+    <width>467</width>
+    <height>333</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="addUserButton">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>220</y>
-     <width>89</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add User</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="deleteUserButton">
-   <property name="geometry">
-    <rect>
-     <x>445</x>
-     <y>220</y>
-     <width>89</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Delete User</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="editAdminStatusButton">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>220</y>
-     <width>151</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Edit Admin Status</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>290</y>
+     <x>160</x>
+     <y>260</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -64,6 +25,39 @@
    <property name="text">
     <string>Back</string>
    </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>221</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="addUserButton">
+      <property name="text">
+       <string>Add User</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteUserButton">
+      <property name="text">
+       <string>Delete User</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="editAdminStatusButton">
+      <property name="text">
+       <string>Edit Admin Status</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

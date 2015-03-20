@@ -9,7 +9,8 @@ AddNewWineries::AddNewWineries(QWidget *parent) :
     ui(new Ui::AddNewWineries)
 {
     ui->setupUi(this);
-    ui->add_winery_file_name->setText("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\new wineries.txt");
+    //ui->add_winery_file_name->setText("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\new wineries.txt");
+    ui->add_winery_file_name->setText("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\newwineries.txt");
     ReadIn();
 }
 
@@ -24,7 +25,10 @@ void AddNewWineries::ReadIn(){
     //QFile file("E:\\WineryProject_CS1D\\WineryList.txt");
 
     // **** STEVEN ****
-    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
+    //QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
+
+    // **** Dori ****
+    QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
 
@@ -61,13 +65,13 @@ void AddNewWineries::ReadIn(){
 
 
 void AddNewWineries::PrintToFile(){
-    //   QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//LoginInfo.txt");
+    //   QFile file("//Users//austinrosario//Desktop//QT workspace//cs1dQTRepository//WineryList.txt");
 
-    //   remove("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
-    //   QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\LoginInfo.txt");
+      remove("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
+      QFile file("C:\\Users\\Dori\\Desktop\\CS1DClassProject\\cs1dQTRepository\\WineryList.txt");
 
-    remove("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
-    QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
+    //remove("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
+    //QFile file("C:\\Users\\Steve\\Documents\\GitHub\\cs1dQTRepository\\WineryList.txt");
 
     file.open(QIODevice::WriteOnly|QIODevice::Text);
 
